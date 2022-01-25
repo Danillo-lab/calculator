@@ -29,6 +29,10 @@ body {
     }
 }
 
+.operations {
+    width: 100%;
+}
+
 .operate {
     width: 120px;
     height: 40px;
@@ -42,6 +46,10 @@ body {
 
 #clear {
     font-size: 15px;
+}
+
+.keys {
+    width: 100%;
 }
 
 .key {
@@ -64,7 +72,7 @@ body {
 ul {
     display: flex;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .delete {
