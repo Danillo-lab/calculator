@@ -49,17 +49,9 @@ body {
     font-size: 15px;
 }
 
-.keys {
-    width: 100%;
-    height: 100%;
-}
-
 .key {
-    position: relative;
     width: 100%;
-    height: 100%;
-    min-height: 130px;
-    max-height: 100%;
+    height: 115px;
     font-size: 30px;
     font-family: Monospace;
     background-color: #0c0d27;
@@ -71,6 +63,7 @@ body {
 
 .key:hover {
     transform: translateY(0px);
+    padding: 30px;
     box-shadow: 0 1px 20px blue;
     background-color: blue;
 }
@@ -87,4 +80,15 @@ ul {
 
 #btn_3 {
     border-top-right-radius: 50px;
+}
+
+.rodape {
+    width: 100%;
+    height: 100px;
+    background-color: #0c0d27;
+    color: #C8FA82;
+    font-family: Serif, 'cursive';
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 20px #C8FA82;
 }
