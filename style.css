@@ -30,6 +30,23 @@ body, html {
     margin: auto;
 }
 
+@keyframes animImg {
+    0% {
+        transform: translateX(0);
+        opacity: 0.2;
+    }
+    20% {
+        transform: translateX(-30px);
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .field_num {
     width: 370px;
     height: 200px;
