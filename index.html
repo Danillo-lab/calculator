@@ -7,19 +7,25 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="field_num">
-        <input id="field" class="input_num" type="text" />
+    <div class="side_bar">
+        <h1>Calculator</h1>
     </div>
-    <div>
-        <ul class="operations">
-            <button onclick="showNum('*')" class="operate">x</button>
-            <button onclick="showNum('-')" class="operate">-</button>
-            <button onclick="showNum('/')" class="operate">÷</button>
-            <button onclick="showNum('+')" class="operate">+</button>
-            <button id="clear" onclick="deleteValue()" class="operate">LIMPAR</button>
-        </ul>
+    <div class="image">
+        <img class="logo" src="logo.png" alt="function" />
     </div>
     <div class="full_btn">
+        <div class="field_num">
+            <input id="field" class="input_num" type="text" />
+        </div>
+        <div>
+            <ul class="operations">
+                <button onclick="showNum('*')" class="operate">x</button>
+                <button onclick="showNum('-')" class="operate">-</button>
+                <button onclick="showNum('/')" class="operate">÷</button>
+                <button onclick="showNum('+')" class="operate">+</button>
+                <button id="clear" onclick="deleteValue()" class="operate">LIMPAR</button>
+            </ul>
+        </div>
         <div class="keys">
             <ul>
                 <button id="btn_1" onclick="showNum('1')" class="key">1</button>
@@ -42,9 +48,7 @@
                 <button onclick="calculate()" class="key">=</button>
             </ul>
         </div>
-        <div class="rodape">
-            <p>Calculator</p>
-        </div>
-        <script src="script.js" type="text/javascript" charset="utf-8"></script>
-    </body>
+    </div>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
 </html>
