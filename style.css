@@ -5,139 +5,207 @@
 
 body, html {
     background-color: #00045c;
-    height: 100vh;
-    background-image: url('/BG.png');
+    background-image: url('./assets/BG.png');
     background-size: cover;
     background-attachment: fixed;
+}
+
+.full {
+    position: absolute;
+    background-image: url('./assets/s1.png'), url('./assets/s2.png'), url('./assets/s3.png');
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+}
+@-moz-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 400px 1000px, 200px 400px, 100px 300px;
+    }
+}
+@-webkit-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+}
+@-ms-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
 }
 
 .side_bar {
-    background-color: #C8FA82;
-    padding: 15px;
-    color: #02089c;
-    font-family: "cursive";
-    width: 100%;
-    position: fixed;
-    z-index: 3;
-    top: 0;
+background-color: #C8FA82;
+padding: 15px;
+color: #02089c;
+font-family: "cursive";
+width: 100%;
+position: fixed;
+z-index: 3;
+top: 0;
 }
 
 .logo {
-    opacity: 0.9;
-    margin-top: 60px;
+opacity: 0.9;
+margin-top: 60px;
 }
 
 .image {
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    background-attachment: fixed;
-    background-size: cover;
+width: 300px;
+height: 300px;
+margin: auto;
+background-attachment: fixed;
+background-size: cover;
 }
 
 @keyframes animImg {
-    0% {
-        transform: translateX(0);
-        opacity: 0.2;
-    }
-    20% {
-        transform: translateX(-30px);
-        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
-    }
-    50% {
-        transform: translateX(30px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+0% {
+transform: translateX(0);
+opacity: 0.2;
+}
+20% {
+transform: translateX(-30px);
+}
+50% {
+transform: translateX(30px);
+}
+100% {
+transform: translateY(0);
+}
 }
 
 .field_num {
-    width: 370px;
-    height: 200px;
-    margin: 0 auto;
-    margin-top: 50px;
+width: 370px;
+height: 200px;
+margin: 0 auto;
+margin-top: 50px;
 }
 
 .input_num {
-    width: 370px;
-    height: 200px;
-    font-size: 40px;
-    border: none;
-    border-radius: 50px;
-    background-color: #33344a;
-    box-shadow: 5px 5px 2px black;
-    color: #C8FA82;
-    font-family: Monospace;
-    text-shadow: 0px 0px 2px #C8FA82;
-    opacity: 0.6;
+width: 370px;
+height: 200px;
+font-size: 40px;
+border: none;
+border-radius: 50px;
+background-color: #33344a;
+box-shadow: 5px 5px 2px black;
+color: #C8FA82;
+font-family: Monospace;
+text-shadow: 0px 0px 2px #C8FA82;
+opacity: 0.6;
 }
 
 @keyframes anim {
-    0% {background-color: #02089c;
-    }
-    50% {background-color: white;
-    }
-    100% {background-color: #02089c;
-    }
+0% {
+background-color: #02089c;
+}
+50% {
+background-color: white;
+}
+100% {
+background-color: #02089c;
+}
 }
 
 .operations {
-    width: 350px;
+width: 350px;
 }
 
 .operate {
-    width: 80px;
-    height: 60px;
-    border: none;
-    margin: 7px;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    border-top-left-radius: 100%;
-    background-color: #C8FA82;
-    box-shadow: 4px 4px 2px black;
-    font-size: 20px;
+width: 80px;
+height: 60px;
+border: none;
+margin: 7px;
+border-bottom-left-radius: 100%;
+border-bottom-right-radius: 100%;
+border-top-left-radius: 100%;
+background-color: #C8FA82;
+box-shadow: 4px 4px 2px black;
+font-size: 20px;
+opacity: 0.9;
 }
 
 #clear {
-    font-size: 15px;
-    width: 100px;
-    border-radius: 30px;
+font-size: 15px;
+width: 100px;
+border-radius: 30px;
 }
 
 .keys {
-    width: 370px;
-    height: 115px;
-    margin: 0 auto;
+width: 370px;
+height: 100%;
+margin: 0 auto;
 }
 
 .key {
-    width: 370px;
-    height: 115px;
-    font-size: 30px;
-    font-family: Monospace;
-    background-color: #0c0d27;
-    color: #C8FA82;
-    border: none;
-    transition: 0.2s linear;
-    opacity: 0.8;
+width: 370px;
+height: 115px;
+font-size: 30px;
+font-family: Monospace;
+background-color: #0c0d27;
+color: #C8FA82;
+border: none;
+transition: 0.2s linear;
+opacity: 0.9;
 }
 
 .key:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 1px 20px black;
+transform: translateY(-5px);
+box-shadow: 0 1px 20px black;
 }
 
 ul {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+display: flex;
+align-items: center;
+margin: 0 auto;
 }
 
 #btn_1 {
-    border-top-left-radius: 50px;
+border-top-left-radius: 50px;
+}
+
+#btn_2 {
+border-bottom-left-radius: 50px;
 }
 
 #btn_3 {
-    border-top-right-radius: 50px;
+border-top-right-radius: 50px;
+}
+
+#btn_4 {
+border-bottom-right-radius: 50px;
 }
