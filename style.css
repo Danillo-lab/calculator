@@ -13,6 +13,7 @@ body, html {
 .full {
     position: absolute;
     background-image: url('./assets/s1.png'), url('./assets/s2.png'), url('./assets/s3.png');
+    background-size: 200px;
     height: 100%;
     left: 0;
     top: 0;
