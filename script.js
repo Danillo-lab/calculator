@@ -13,11 +13,7 @@ function deleteValue() {
 function calculate() {
     const valueInput = document.getElementById('field').value
     const value = document.getElementById('field')
-    if (valueInput === "", "Nada digitado:(") {
-        document.getElementById('field').value = "Nada digitado:("
-    } else {
-        document.getElementById('field').value = eval(valueInput)
-    }
+    document.getElementById('field').value = eval(valueInput)
     value.style.animation = ""
     setTimeout(function() {value.style.animation = "anim 0.5s linear"}, 1);
 }
