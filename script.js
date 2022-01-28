@@ -6,7 +6,8 @@ function showNum(num) {
 
 function deleteValue() {
     const valueImput = document.getElementById('field').value
-    document.getElementById('field').value = ""
+    const result = valueImput.substr(0, valueImput.length - 1)
+    return document.getElementById('field').value = result
 }
 
 function calculate() {
