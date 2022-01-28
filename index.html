@@ -7,10 +7,25 @@
     <title>Calculator</title>
 </head>
 <body>
+    <div id="pag_help" class="pag_help">
+        <button onclick="ocult()" class="exit">x</button>
+        <h1>AJUDA!</h1>
+        <li>
+            Caso não queira apagar número por número,
+            clique na imagem do topo para apagar todos os
+            valores digitados.
+        </li>
+        <li>
+            Outras dúvidas?
+            <A href="https://wa.me/qr/ECYY4ORUYLX3J1">
+                entre em contato....
+            </a>
+        </li>
+    </div>
     <div class="full"></div>
-
     <div class="side_bar">
         <h1>Calculator</h1>
+        <button id="help" class="help" onclick="help()">?</button>
     </div>
 
     <div class="image">
@@ -20,7 +35,7 @@
     <div class="field_num">
         <input id="field" class="input_num" type="text" />
     </div>
-    
+
     <div>
         <ul class="operations">
             <button onclick="showNum('*')" class="operate">x</button>
@@ -30,7 +45,7 @@
             <button id="clear" onclick="deleteValue()" class="operate">APAGAR</button>
         </ul>
     </div>
-    
+
     <div class="keys">
         <ul>
             <button id="btn_1" onclick="showNum('1')" class="key">1</button>
@@ -53,7 +68,7 @@
             <button id="btn_4" onclick="calculate()" class="key">=</button>
         </ul>
     </div>
-    
+
     <script src="script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
